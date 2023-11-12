@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="alert-container">
+        <p>Alert</p>
+        <hr>
+        <span>Please enter the valid value</span>
+    </div>
+    <div class="loan-container">
+        <h3>Loan Calculator</h3>
+        <form>
+            <label for="principle">Loan Amount:</label>
+            <input type="number" id="principle">
+
+            <label for="duration">Loan Tenure in years:</label>
+            <input type="number" id="duration">
+
+            <label for="roi">Rate of interest:</label>
+            <input type="number" id="roi">
+
+            <div class="button-container">
+                <button id="calculate">Calculate</button>
+                <button id="reset">Reset</button>
+            </div>
+        </form>
+
+        <div class="answer-container">
+            <p>Loan amount: <span id="amt"></span></p>
+            <p>Total amount to be paid: <span id="total-amt"></span></p>
+            <p>Total interest to be paid: <span id="interest"></span></p>
+            <p>EMI per month: <span id="emi"></span></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
